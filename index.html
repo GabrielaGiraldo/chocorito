@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles2.css">
+    <link rel="stylesheet" href="./styles/styles3.css">
+    <link rel="stylesheet" href="./styles/styles4.css">
+    <title>Color pallete Generator</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/colors.png" alt="logo">
+            <h1>Colors</h1>
+        </div>
+        <div class="navegador">
+            <a href="#Generador">Pallete Generator</a>
+            <a class="boton_completo" href="#">Follow</a>
+        </div>
+    </header>
+    <main>
+        <section id="Intro">
+            <h2>Genera <b>increibles</b> paletas de colores</h2>
+            <span>¿Buscas una paleta de colores para tu página web? Usa nuestra herramienta.</span>
+            <div class="botones">
+                <a class="boton_completo" href="#Generador">Iniciar ahora</a>
+                <a href="#">Conocer más</a>
+            </div>
+        </section>
+        <section id="Generador">
+            <form>
+                <label for="hex">Ingrese un código hexadecimal:</label>
+                <input type="text" placeholder="#FFFFFF" id="hex" maxlengt h="7" onchange="addEventListener()">
+                <button type="submit" class="boton_completo" onclick="generateColors()"><span>Generar</span></button>
+            </form>
+            <div id="colors"></div>
+        </section>
+
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
